@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monad PFP Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="animated-background"></div>
+    <div class="container">
+        <h1>Level Up Your PFP with Monad</h1>
+        <p>Monad is a high-performance, parallel execution blockchain designed to bring groundbreaking scale and efficiency to the decentralized world. Create your own unique profile picture to join the community.</p>
+        
+        <!-- Canvas for real-time preview -->
+        <div id="canvas-container">
+            <canvas id="imageCanvas"></canvas>
+        </div>
+
+        <div class="controls">
+            <label for="image-upload" class="custom-file-upload">
+                Upload Image
+            </label>
+            <input type="file" id="image-upload" accept="image/*">
+            
+            <div class="zoom-slider-container">
+                <span>Zoom</span>
+                <input type="range" id="zoom-slider" min="0.2" max="20" value="1" step="0.1">
+            </div>
+            
+            <button id="download-btn" class="download-button">Download PFP</button>
+        </div>
+        
+        <div class="social-links">
+            <a href="https://twitter.com/techkabazar" target="_blank" class="social-link twitter-link">
+                <i class="fab fa-x-twitter"></i> @techkabazar
+            </a>
+            <a href="https://discord.gg/qaisbutt" target="_blank" class="social-link discord-link">
+                <i class="fab fa-discord"></i> qaisbutt
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
